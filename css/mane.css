@@ -1,8 +1,14 @@
+body {
+  background:#F1F4F8;
+}
+/* Start header */
 header {
     background-color: #F56767;
     height: 60px;
+    
 }
-header .main {
+header p {
+    display: block;
     text-align: left;
     padding-top:15px ;
     padding-left: 370px;
@@ -10,6 +16,92 @@ header .main {
     color: white;
     font-size: 28px;
 }
+/* A link options */
+a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+/* List menu */
+menu {
+  display: inline-block;
+  width: 100%;
+  background: #eee;
+  padding-left: 350px;
+  margin-top: 0px;
+
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #eee;
+  color: black;
+  font-weight: 700;
+  position: relative;
+}
+
+li:after {
+  content: "";
+  border-bottom: 3px solid red;
+  display: block;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+li:hover:after {
+  width: 30px;
+  height: 3px;
+  left: 1rem;
+  transition: all .4s ease;
+}
+
+li:hover {
+  transition: background .4s ease-in-out;
+  color: #111;
+}
+/* Select Type */
+.select-type {
+  width: 206px;
+  height: 45px;
+  background-color:#F56767;
+  color: white;
+  border: 0.1px solid #F56767;
+  border-radius: 5px ;
+  text-align-last: center;
+  margin-top: 60px;
+  font-family: 'Spartan', sans-serif;
+}
+/* info-border */
+.info-date {
+  margin-top: 21px;
+  border: 1px solid black;
+  background: gray;
+  border-radius: 5px;
+}
+.dateS {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 148px;
+  height: 45px;
+  color: #959CA7;
+  background-color: #F1F4F8;
+  border: 1px solid #F1F4F8;
+  border-radius: 5px;
+}
+.dateE {
+  width: 148px;
+  height: 45px;
+  margin-left: 15px;
+  color: #959CA7;
+  background-color: #F1F4F8;
+  border: 1px solid #F1F4F8;
+  border-radius: 5px;
+}
+/* Adaptations */
 section{
     padding: 0 15px;
   }

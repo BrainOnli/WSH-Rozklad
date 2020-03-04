@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../WSH-Rozklad/img/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../WSH-Rozklad/css/mane.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>WSH-Rozklad</title>
 </head>
 <body>
    <header>
-       <div class="main">WSH ROZKŁAD</div>
+       <p>WSH ROZKŁAD</p>
    </header>
+   <menu>
+     <li><a href="">Plany Zajęć</a></li>
+     <li><a href="">Przedmioty i oceny</a></li>
+     <li><a href="">Egzaminy</a></li>
+   </menu>
    <section>
-    <div class="content">
-      content
-    </div>
+     <select class="select-type" id="tipe">
+       <option selected>Выбери свой керунек</option>
+       <option disabled>Informatyka</option>
+       <option value="Option 1" >IT 2019 ĆW1</option>
+       <option value="Option 2" >IT 2019 ĆW2</option>
+       <option value="Option 3">IT 2019 ĆW3</option>
+       <option disabled>Logistyka</option>
+       <option value="Option 4">LOG/2019/INŻ/N</option>
+       <option value="Option 4">LOG/2019/INŻ/S</option>
+     </select>
+     <div class="info-date">
+       <button class="dateS" id="butt1">Data Od</button>
+       <button class="dateE" id="butt2">Data Do</button>
+     </div>
   </section>
 </body>
 </html>
